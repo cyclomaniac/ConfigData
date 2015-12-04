@@ -1,4 +1,6 @@
 ---
+# THe application.yml file at the base of a configuration server repository forms a
+# base configuration layer for all applications.
 eureka:
   client:
     serviceUrl:
