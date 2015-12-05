@@ -2,6 +2,9 @@
 # THe application.yml file at the base of a configuration server repository forms a
 # base configuration layer for all applications.
 eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id}:${random.value}
   client:
     serviceUrl:
       defaultZone: http://localhost:8011/eureka/,http://localhost:8012/eureka/,http://localhost:8013/eureka/
